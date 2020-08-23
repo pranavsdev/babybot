@@ -37,7 +37,6 @@ django-slack==5.14.0
 django-widget-tweaks==1.4.5
 djangorestframework==3.11.0
 dlib==19.20.0
-en-core-web-sm==2.2.5
 entrypoints==0.3
 factory-boy==2.12.0
 Faker==4.0.1
