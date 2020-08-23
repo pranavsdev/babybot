@@ -50,7 +50,7 @@ def enter_details():
 def chatbot_ques_html():
     html_content="""<form action=/chatbot_answer method='POST'> 
                     <br><br><br><br><br><br>
-                    <label> Ask anything </label> 
+                    <label> Ask me anything </label> <br><br>
                     <input type='text' name='question' maxlength="30" size="50"> 
                 
                     <button type='submit'> Submit </button> 
