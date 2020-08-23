@@ -51,7 +51,7 @@ def chatbot_ques_html():
     html_content="""<form action=/chatbot_answer method='POST'> 
                     <br><br><br><br><br><br>
                     <label> Ask anything </label> 
-                    <input type='text' name='question' size="100"> 
+                    <input type='text' name='question' maxlength="30" size="50"> 
                 
                     <button type='submit'> Submit </button> 
                     </form> """
