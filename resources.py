@@ -74,9 +74,10 @@ def chatbot_ans_html(question):
 
     html_content="""<html>
             <body>
+            <br><br><br><br><br><br>
             """ + answer + """
-            <br><br><button onclick="window.location.href='/chatbot_question'">Another question</button><br><br>
-            <button onclick="window.location.href='/index'">Home</button><br>
+            <br><br><button onclick="window.location.href='/chatbot_question'">Another question</button>
+            <button onclick="window.location.href='/index'">Home</button>
 
             </body>
         </html> """
