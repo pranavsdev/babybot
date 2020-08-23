@@ -1,3 +1,6 @@
+import socket
+import sys
+
 from fastapi import FastAPI,Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -6,6 +9,15 @@ from resources import index_html_response, enter_details, hello_html_response, l
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates/")
+hostname = socket.gethostname()
+
+@app.get("/")
+async def read_root():
+    return {
+        "name": "babybot",
+        "host": hostname,
+        "version": f"Hello world! From FastAPI running on Uvicorn. Using Python"
+    }
 
 @app.get("/hello/", response_class=HTMLResponse)
 async def hello():
