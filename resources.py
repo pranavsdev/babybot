@@ -71,7 +71,7 @@ def chatbot_ans_html(question):
         predict_answer[target] = count
 
     answer = max(predict_answer, key=predict_answer.get)
-
+ 
     html_content="""<html>
             <body>
             <br><br><br><br><br><br>
